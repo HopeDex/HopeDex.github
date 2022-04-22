@@ -17,7 +17,7 @@ const Sidebar = ({ isOpen, toggleOpen }) => {
       </Icon>
       <SWrapper>
         <SMenu>
-          <SLink to="about" onClick={toggleOpen}>
+          <SLink to="/about" onClick={toggleOpen}>
             About
           </SLink>
           <SLink to="about" onClick={toggleOpen}>
@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, toggleOpen }) => {
           </SLink>
         </SMenu>
         <SBtnWrap>
-          <SRoute to="/download">download cv</SRoute>
+          <SRoute to="/download">Download cv</SRoute>
         </SBtnWrap>
       </SWrapper>
     </Container>

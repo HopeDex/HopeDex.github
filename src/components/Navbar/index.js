@@ -12,28 +12,28 @@ import {
   NavButtonLink,
 } from "./NavBarElements";
 
-const Navbar = ({toggleOpen}) => {
+const Navbar = ({ toggleOpen }) => {
   return (
     <>
       <Nav>
         <NavBarContainer>
-          <NavLogo to="/">Hope</NavLogo>
-          <MIcon onClick = {toggleOpen}>
+          <NavLogo to="/">HOPE MADZIAKAPITA</NavLogo>
+          <MIcon onClick={toggleOpen}>
             <FaBars />
           </MIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about">ABOUT</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Projects">About</NavLinks>
+              <NavLinks to="Projects">PROJECTS</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Contacts">About</NavLinks>
+              <NavLinks to="Contacts">CONTACT</NavLinks>
             </NavItem>
           </NavMenu>
           <NavButton>
-            <NavButtonLink to="/download">download CV</NavButtonLink>
+            <NavButtonLink to="/download">Download CV</NavButtonLink>
           </NavButton>
         </NavBarContainer>
       </Nav>

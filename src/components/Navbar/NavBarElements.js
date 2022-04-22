@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
+import { Link as LinkRoute } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 export const Nav = styled.nav`
   background: beige;
-  height: 80px;
+  height: 70px;
   /* margin-top: -80px; */
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@ export const NavBarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkRouter)`
+export const NavLogo = styled(LinkRoute)`
   color: black;
   justify-self: flex-start;
   cursor: pointer;
@@ -72,16 +72,23 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
+  color: white;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  padding: 0 1rem;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid grey;
+  }
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background: black;
+    padding: 0 30px;
+    text-decoration: none;
+    border-radius: 50px;
   }
 `;
 
@@ -94,23 +101,24 @@ export const NavButton = styled.nav`
   }
 `;
 
-export const NavButtonLink = styled(LinkRouter)`
+export const NavButtonLink = styled(LinkRoute)`
   border-radius: 50px;
-  background: #01bf71;
+  background: black;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606
+  color: white;
+  font-weight: bold;
   font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  text-decoration: none; 
+  text-decoration: none;
 
-  &:hover{
+  &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606
+    background: white;
+    color: black;
+    text-decoration: none;
   }
-
 `;

@@ -7,7 +7,7 @@ export const Container = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: beige;
   display: grid;
   align-items: center;
   top: 0;
@@ -17,7 +17,7 @@ export const Container = styled.aside`
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 export const Closecon = styled(FaTimes)`
-  color: White;
+  color: black;
 `;
 
 export const Icon = styled.div`
@@ -31,7 +31,7 @@ export const Icon = styled.div`
 `;
 
 export const SWrapper = styled.div`
-  color: white;
+  color: black;
 `;
 
 export const SLink = styled(LinkScroll)`
@@ -43,7 +43,7 @@ export const SLink = styled(LinkScroll)`
   list-style: none;
   transition: 02s ease-in-out;
   text-decoration: none;
-  color: white;
+  color: black;
   cursor: pointer;
 
   &:hover {
@@ -68,10 +68,10 @@ export const SMenu = styled.ul`
 `;
 export const SRoute = styled(LinkRoute)`
   border-radius: 50px;
-  background: #01bf71;
+  background: black;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: white;
   font-size: 16px;
   outline: none;
   border: none;
