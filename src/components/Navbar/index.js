@@ -17,7 +17,7 @@ const Navbar = ({ toggleOpen }) => {
     <>
       <Nav>
         <NavBarContainer>
-          <NavLogo to="/">HOPE MADZIAKAPITA</NavLogo>
+          <NavLogo to="/home">HOPE MADZIAKAPITA</NavLogo>
           <MIcon onClick={toggleOpen}>
             <FaBars />
           </MIcon>
@@ -26,10 +26,10 @@ const Navbar = ({ toggleOpen }) => {
               <NavLinks to="about">ABOUT</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Projects">PROJECTS</NavLinks>
+              <NavLinks to="projects">PROJECTS</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Contacts">CONTACT</NavLinks>
+              <NavLinks to="contacts">CONTACT</NavLinks>
             </NavItem>
           </NavMenu>
           <NavButton>
