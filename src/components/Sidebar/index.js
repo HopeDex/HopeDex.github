@@ -9,17 +9,23 @@ import {
   SBtnWrap,
   SRoute,
 } from "./SidebarElements";
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggleOpen }) => {
   return (
-    <Container>
-      <Icon>
+    <Container isOpen={isOpen} onClick={toggleOpen}>
+      <Icon onClick={toggleOpen}>
         <Closecon />
       </Icon>
       <SWrapper>
         <SMenu>
-          <SLink to="about">About</SLink>
-          <SLink to="about">Projects</SLink>
-          <SLink to="about">Contact</SLink>
+          <SLink to="about" onClick={toggleOpen}>
+            About
+          </SLink>
+          <SLink to="about" onClick={toggleOpen}>
+            Projects
+          </SLink>
+          <SLink to="about" onClick={toggleOpen}>
+            Contact
+          </SLink>
         </SMenu>
         <SBtnWrap>
           <SRoute to="/download">download cv</SRoute>
