@@ -1,10 +1,19 @@
 import React from "react";
-
+import {
+  Container,
+  Wrapper,
+  Card,
+  SIcon,
+  ServicesH1,
+  ServicesH2,
+  ServicesP,
+} from "./ServiceElements";
+import Icon1 from "../../images/svg-1.svg";
 const Services = () => {
   return (
     <>
       <Container id="services">
-        <ServicesH1></ServicesH1>
+        <ServicesH1>Well Projects</ServicesH1>
         <Wrapper>
           <Card>
             <SIcon src={Icon1}></SIcon>

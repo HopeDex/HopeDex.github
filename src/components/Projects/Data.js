@@ -31,7 +31,7 @@ export const homeObjTwo = {
   alt: "Car",
   dark: false,
   primary: false,
-  darktext: true,
+  darkText: true,
 };
 
 export const homeObjThree = {
@@ -49,5 +49,5 @@ export const homeObjThree = {
   alt: "Car",
   dark: true,
   primary: true,
-  darktext: false,
+  darktext: true,
 };

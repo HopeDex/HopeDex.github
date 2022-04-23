@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 export const Nav = styled.nav`
-  background: beige;
-  height: 70px;
-  /* margin-top: -80px; */
+  background: ${({ scrollNav }) => (scrollNav ? "black" : "transparent")};
+  height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@ export const NavBarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkRoute)`
-  color: black;
+  color: white;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -48,10 +48,10 @@ export const MIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translated(-100%, 60%);
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    cursor: white;
-    color: black;
+    cursor: black;
+    color: white;
   }
 `;
 
@@ -72,23 +72,21 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-  color: white;
+  color: #fff !important;
   display: flex;
   align-items: center;
+  text-decoration: none;
   height: 100%;
-  cursor: pointer;
   padding: 0 1rem;
+  cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid grey;
+    border-bottom: 3px solid white !important;
   }
 
   &:hover {
     transition: all 0.3s ease-in-out;
     background: black;
-    padding: 0 30px;
-    text-decoration: none;
-    border-radius: 50px;
   }
 `;
 

@@ -8,6 +8,7 @@ import {
   homeObjThree,
 } from "../components/Projects/Data";
 import Sidebar from "../components/Sidebar";
+import Services from "../components/Services";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ const Home = () => {
       <Projects {...homeObjOne} />
       <Projects {...homeObjTwo} />
       <Projects {...homeObjThree} />
+      <Services />
     </>
   );
 };

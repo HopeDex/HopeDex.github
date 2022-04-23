@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -13,9 +13,21 @@ import {
 } from "./NavBarElements";
 
 const Navbar = ({ toggleOpen }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavBarContainer>
           <NavLogo to="/home">HOPE MADZIAKAPITA</NavLogo>
           <MIcon onClick={toggleOpen}>

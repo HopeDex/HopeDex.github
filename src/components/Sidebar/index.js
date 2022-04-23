@@ -20,10 +20,10 @@ const Sidebar = ({ isOpen, toggleOpen }) => {
           <SLink to="/about" onClick={toggleOpen}>
             About
           </SLink>
-          <SLink to="about" onClick={toggleOpen}>
+          <SLink to="projects" onClick={toggleOpen}>
             Projects
           </SLink>
-          <SLink to="about" onClick={toggleOpen}>
+          <SLink to="contacts" onClick={toggleOpen}>
             Contact
           </SLink>
         </SMenu>

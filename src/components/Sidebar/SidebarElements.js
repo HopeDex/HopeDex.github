@@ -43,11 +43,11 @@ export const SLink = styled(LinkScroll)`
   list-style: none;
   transition: 02s ease-in-out;
   text-decoration: none;
-  color: black;
+
   cursor: pointer;
 
   &:hover {
-    color: green;
+    color: white !important;
     transition: 0.2s ease-in-out;
   }
 `;
@@ -59,6 +59,7 @@ export const SBtnWrap = styled.div`
 
 export const SMenu = styled.ul`
   display: grid;
+  grid-template-columns: 1fr; 
   grid-template-rows: repeat(6, 80px);
   text-align: center;
 

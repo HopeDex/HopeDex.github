@@ -39,7 +39,7 @@ const Projects = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darktext={darkText}>{description}</Subtitle>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
                     to="home"

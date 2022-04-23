@@ -24,6 +24,7 @@ export const Wrapper = styled.div`
 export const Row = styled.div`
   display: grid;
   grid-auto-column: minmax(auto, 1fr);
+  align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
 
@@ -75,7 +76,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: white;
+  color: ${({ darkText }) => (darkText ? "black" : "#fff")};
 `;
 
 export const BtnWrap = styled.div`
