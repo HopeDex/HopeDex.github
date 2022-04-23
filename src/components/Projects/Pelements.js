@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   color: white;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
-
+  background: ${({ lightBg }) => (lightBg ? "beige" : "#010606")};
+  padding: 10px;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
@@ -12,13 +12,20 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 650px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 770px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 770px;
+  }
 `;
 
 export const Row = styled.div`

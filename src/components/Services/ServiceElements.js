@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: beige;
 
-  @media screen and (max-width: 768px) {
-    height: 1100px;
+  @media screen and (max-width: 820px) {
+    height: 1200px;
   }
   @media screen and (max-width: 480px) {
     height: 1300px;
@@ -18,6 +18,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -26,7 +27,7 @@ export const Wrapper = styled.div`
   padding: 0 50px;
 
   @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media screen and (max-width: 768px) {
@@ -39,7 +40,7 @@ export const Card = styled.div`
   background: white;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
   max-height: 340px;
@@ -61,7 +62,7 @@ export const SIcon = styled.img`
 `;
 export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
-  color: white;
+  color: black;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {

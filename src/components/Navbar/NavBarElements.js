@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "black" : "transparent")};
+  background: ${({ scrollNav }) =>
+    scrollNav ? "rgb(78, 48, 48)" : "transparent"};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -38,6 +39,12 @@ export const NavLogo = styled(LinkRoute)`
   margin-left: center;
   font-weight: bold;
   text-decoration: none;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: beige;
+  }
 `;
 
 export const MIcon = styled.div`

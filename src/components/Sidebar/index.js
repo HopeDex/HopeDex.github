@@ -17,8 +17,8 @@ const Sidebar = ({ isOpen, toggleOpen }) => {
       </Icon>
       <SWrapper>
         <SMenu>
-          <SLink to="/about" onClick={toggleOpen}>
-            About
+          <SLink to="services" onClick={toggleOpen}>
+            Services
           </SLink>
           <SLink to="projects" onClick={toggleOpen}>
             Projects

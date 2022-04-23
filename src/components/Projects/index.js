@@ -32,7 +32,7 @@ const Projects = ({
 }) => {
   return (
     <>
-      <Container lightBg={lightBg} id={id}>
+      <Container lightBg={lightBg} id="projects">
         <Wrapper>
           <Row imgStart={imgStart}>
             <Column1>

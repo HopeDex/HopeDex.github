@@ -35,7 +35,7 @@ const Navbar = ({ toggleOpen }) => {
           </MIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">ABOUT</NavLinks>
+              <NavLinks to="services">SERVICES</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="projects">PROJECTS</NavLinks>

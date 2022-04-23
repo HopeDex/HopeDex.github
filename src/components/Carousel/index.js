@@ -1,13 +1,6 @@
 import React from "react";
 import video from "../../images/video.mp4";
-import {
-  Container,
-  CarBg,
-  VidBg,
-  CarHeader,
-  CarText,
-  Content,
-} from "./CarouselElems";
+import { Container, CarBg, VidBg, CarText, Content } from "./CarouselElems";
 const Carousel = () => {
   return (
     <Container id="home">
@@ -15,10 +8,11 @@ const Carousel = () => {
         <VidBg autoPlay loop muted src={video} type="video/mp4" />
       </CarBg>
       <Content>
-        <CarHeader>HOME MADZIAKAPITA</CarHeader>
+        <CarText>HI THERE! 🐤 I'm </CarText>
+        <CarText>HOPE,</CarText>
         <CarText>
-          Explore my work experience and stuff, well i gotta admit I dont know
-          what to put here.
+          I specialize in web development, if you are a business seeking a web
+          presence or are looking to hire, please contact me here
         </CarText>
       </Content>
     </Container>
