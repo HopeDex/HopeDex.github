@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll/modules";
 import {
   Nav,
   NavBarContainer,
@@ -25,23 +26,56 @@ const Navbar = ({ toggleOpen }) => {
     window.addEventListener("scroll", changeNav);
   }, []);
 
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavBarContainer>
-          <NavLogo to="/home">HOPE MADZIAKAPITA</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>
+            HOPE MADZIAKAPITA
+          </NavLogo>
           <MIcon onClick={toggleOpen}>
             <FaBars />
           </MIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="services">SERVICES</NavLinks>
+              <NavLinks
+                to="services"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                SERVICES
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects">PROJECTS</NavLinks>
+              <NavLinks
+                to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                PROJECTS
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contacts">CONTACT</NavLinks>
+              <NavLinks
+                to="contacts"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                CONTACT
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavButton>

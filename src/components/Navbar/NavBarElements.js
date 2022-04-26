@@ -65,6 +65,8 @@ export const MIcon = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
+
+  margin-bottom: 0;
   list-style: none;
   text-align: center;
   margin-right: -22px;
@@ -88,7 +90,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid white !important;
+    border-bottom: 3px solid beige;
   }
 
   &:hover {
